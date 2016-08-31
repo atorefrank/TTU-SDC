@@ -9,4 +9,4 @@ The AngularJS app should also be able to run from your command line using "npm s
 I also recommend having a MySQL community server edition installed. The server can be configure to any database of your choosing, but I will
 be using MySQL in the demo.
 
-The goal is for you to walk away with a template you can build on and tweak for future projects. Looking forward to seeing you folks on the 5th.
+The goal is for you to walk away with a template you can build on and tweak for future projects. Looking forward to seeing you folks on the 6th.
