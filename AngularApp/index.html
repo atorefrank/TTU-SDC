@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <base href="/">
+    <title>Welcome to InSense</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="node_modules/ng2-charts/bundles/ng2-charts.min.js"></script>
+    <!-- <script src="node_modules/rxjs/bundles/Rx.js"></script> -->
+    <!-- <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script> -->
+
+    <!-- Add jquery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="resources/js/semantic.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <!-- =============== VENDOR SCRIPTS ===============-->
+   <!-- MODERNIZR-->
+   <script src="resources/vendor/modernizr/modernizr.custom.js"></script>
+   <!-- MATCHMEDIA POLYFILL-->
+   <script src="resources/vendor/matchMedia/matchMedia.js"></script>
+   <!-- JQUERY-->
+   <script src="resources/vendor/jquery/dist/jquery.js"></script>
+   <!-- STORAGE API-->
+   <script src="resources/vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+   <!-- JQUERY EASING-->
+   <script src="resources/vendor/jquery.easing/js/jquery.easing.js"></script>
+   <!-- ANIMO-->
+   <script src="resources/vendor/animo.js/animo.js"></script>
+   <!-- SLIMSCROLL-->
+   <script src="resources/vendor/slimScroll/jquery.slimscroll.min.js"></script>
+   <!-- SCREENFULL-->
+   <script src="resources/vendor/screenfull/dist/screenfull.js"></script>
+   <!-- LOCALIZE-->
+   <script src="resources/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+   <!-- RTL demo-->
+   <script src="resources/js/demo/demo-rtl.js"></script>
+   <!-- =============== PAGE VENDOR SCRIPTS ===============-->
+   <!-- =============== APP SCRIPTS ===============-->
+   <script src="resources/js/app.js"></script>
+
+   <!-- =============== VENDOR STYLES ===============-->
+   <!-- FONT AWESOME-->
+   <link rel="stylesheet" href="resources/vendor/fontawesome/css/font-awesome.min.css">
+   <!-- SIMPLE LINE ICONS-->
+   <link rel="stylesheet" href="resources/vendor/simple-line-icons/css/simple-line-icons.css">
+   <!-- GLYPHICONS-->
+   <!-- ANIMATE.CSS-->
+   <link rel="stylesheet" href="resources/vendor/animate.css/animate.min.css">
+   <!-- WHIRL (spinners)-->
+   <link rel="stylesheet" href="resources/vendor/whirl/dist/whirl.css">
+   <!-- =============== PAGE VENDOR STYLES ===============-->
+
+   <!-- =============== APP STYLES ===============-->
+   <link rel="stylesheet" href="resources/css/app.css" id="maincss">
+
+    <link rel="stylesheet" type="text/css" class="ui" href="resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/semantic.css" />
+    <link rel="stylesheet" type="text/css" class="ui" href="resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" class="ui" href="resources/css/notifications.css" />
+
+    <script src="node_modules/ng2-bs3-modal/bundles/ng2-bs3-modal.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('build/main').catch(function(err){ console.error(err);  });
+    </script>
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
+    <script>
+ // Fixes undefined module function in SystemJS bundle
+ function module() {}
+ </script>
+  </body>
+</html>
