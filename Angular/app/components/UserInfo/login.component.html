@@ -1,0 +1,31 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <side-bar></side-bar>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+      <h1 class="page-header">Dashboard</h1>
+
+        <div class="row placeholders">
+          <form class="ui form" (ngSubmit)="onSubmit()" [hidden] = "loginService.checkLogin()">
+            <div class="field">
+              <label for ="username">Username</label>
+              <input type="text" name="username" placeholder="username" [(ngModel)]="model.username" required />
+            </div>
+            <div class="field">
+              <input type="password" name="password" placeholder="password" [(ngModel)]="model.password" required />
+            </div>
+
+            <button type="submit" class="ui button">Submit</button>
+          </form>
+</div>
+
+
+<div [hidden]="!loginService.checkLogin()">
+  <h3>Logged In Successfully!</h3>
+  <h2>Welcome back, {{currentUserName}}</h2>
+</div>
+
+</div>
+</div>
+</div>
