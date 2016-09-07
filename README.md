@@ -56,7 +56,7 @@ Ever tried to drive you remote controlled car in Austin from New York and build 
 
 Below are some links that will quench your thirst for knowledge on why you give two cents  or more about REST API’s.
 
-- Simple Version: https://www.quora.com/What-is-a-REST-AP
+- Simple Version: https://www.quora.com/What-is-a-REST-API
 
 - Technical Version: http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming
  
