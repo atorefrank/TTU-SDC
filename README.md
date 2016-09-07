@@ -2,13 +2,16 @@
 
 ## Updates
 
+### [Please take this poll!](pollev.com/isaacgriswol204)
+
+
 ### 9/7/2016
 - The github folder has been updated with a java backend project with all the files we need and zero code. Together we will fill it in and chug along.
 - Second, the Angular App has suffered the same fate and has been gutted. We will fill it up together also. We suggest you play and mess with it. Get comfortable with being to open, close and start up the applications. If you have issues, the internet is filled with answers, looking for question like yours. If for some reason, you have found the threshold of the internets wisdom, We will do my best to answer your question through the facebook page. Better yet **please ask**.
 - PS: PLEASE, PLEASE, PLEASE. DON’T WAIT TILL THE END TO LET US KNOW YOU ARE NOT COMFORTABLE OR FAMILIAR WITH THE CONCEPTS. WE PROMISE YOU WE DON’T CHARGE FOR QUESTIONS, EXCEPT ON WEEKENDS.
 
 ## Overview
-This guide is designed to assit those who are attending the TTU SDC's Hands-On API Workshop.
+This guide is designed to assist those who are attending the TTU SDC's Hands-On API Workshop.
 
 ### Workshop
 From September 5th to September 8th we will have a guest from industry who is going to be hosting a series of short workshops that show you how to build a simple eCommerce site (including API but not including payment system integration). **The workshop will be interactive!**
@@ -46,7 +49,7 @@ A willingness to learn!
 # Java API
 ## What is an API anyway and why do I need to know what it is?
 
-Ever wondered what everyone is saying about you on twitter without following them? Then use the [twitter API](https://dev.twitter.com/rest/public).
+Ever wondered what everyone is saying about you on twitter without following them? Then use the [Twitter API](https://dev.twitter.com/rest/public).
 
 Every wondered how all those sites have Google Maps embedded in them? Check out [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/tutorials/).
 
