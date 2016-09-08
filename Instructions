@@ -1,0 +1,114 @@
+So one of the mistakes I made today was assuming that everyone in the room new or researched what a REST API was before the workshop and why it was important.  I will take some time to introduce the concept using a very well written and concise source:
+ 
+ 
+What is an API anyway and why do I need to know what it is?
+ 
+Ever wondered what everyone is saying about you on twitter without following them? Then use the twitter API: https://dev.twitter.com/rest/public
+ 
+Ever tried to drive you remote controlled car in Austin from New York and build different apps for different functions without rewriting the backend or the controls on the car. Then you need a REST API.
+ 
+Below are some links that will quench your thirst for knowledge on why you give two cents  or more about REST API’s.
+ 
+Simple Version: https://www.quora.com/What-is-a-REST-API
+ 
+ 
+Technical Version: http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming
+ 
+ 
+Long and Visual Version: http://www.restapitutorial.com/lessons/whatisrest.html
+ 
+ 
+ JAVA
+ 
+Go to: https://github.com/atorefrank/TTU-SDC
+ 
+ 
+Download the zip file onto your desktop.
+ 
+Go into eclipse (luna version) and go to file, import, Existing maven projects, Browse to the downloaded folder (unzipped version of zip file) and open the demo folder.
+ 
+Wait for eclipse to load the folder and dependencies. You should be able to see when it’s ready by looking at the bottom right corner of the IDE (eclipse).
+ 
+We will start by creating a Model Class (This defines the object and the attributes of the object) in com.demo.backend.model
+ 
+Photo
+ 
+User
+-Id
+-First Name
+-Last Name
+-User Name
+-Password
+-Date Created
+-Photos owned by user
+-Photos liked by users (Photos can also be liked by multiple users)
+ 
+Comment
+-Id
+-Content
+-Photo commented on multiple times
+-Id of the photo commented on
+-Name of user commenting
+ 
+Photo
+-Id
+-Photo Name
+-Title
+-Description
+-Image
+-Date Created
+-Name of user who owns the photos
+-How many people like the photo
+-What comments does the photo have
+ 
+Next we will into com.demo.backend.dao and create an interface that accesses the attributes of our object from  the database AKA CrudRepository.
+ 
+Com.demo.service and com.demo.service.impl relays the user’s request to the dao so that it can retrieve the appropriate object.
+ 
+Com.demo.controller interfaces with the front end application by fetching or posting data to the service layer, which in turn does what was stated previously.
+ 
+Here is a good stack overflow answer that explains the concept in finer detail:
+ 
+http://stackoverflow.com/questions/3885675/service-layer-and-controller-who-takes-care-of-what
+ 
+ 
+In order to run the java program, right click on the demo folder and go to Run Ass Springboot.
+ 
+Add:
+ 
+          <dependency>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-starter-data jpa</artifactId>
+              
+          </dependency>
+         
+          <dependency>
+               <groupId>mysql</groupId>
+               <artifactId>mysql-connector-java</artifactId>
+          </dependency
+ 
+between the test and web dependency located in the pom.xml file at the bottom. When you click on the pom.xml file you should be able to see some tabs. Click on the pom.xml tab and you’ll see something looking like the dependencies above.
+ 
+ 
+Angular
+ 
+Open the atom editor. Go to file. Click open, and go to the location of the TTU-SDC folder. Inside it, open the AngularApp.
+ 
+In order to run the AngularApp you should be able to go to the command line and open it and cd into the Angular App and write npm install, then after it is done npm start. Here is a set of instructions
+ 
+Feel free to go through the whole resource, but for the  purpose of this tutorial the Navigating directories section will be most helpful. Please read it before hand to save everyone some time tomorrow: https://www.learnenough.com/command-line-tutorial#sec-navigating_directories
+ 
+We will not be using the quickstart for our tutorial since we already have template, but for the sake of everyone to be on the same page, frankly, late night reading, please go through this link to be familiar what AngularJS is and why it matters:
+ 
+https://angular.io/docs/ts/latest/quickstart.html
+ 
+ 
+ 
+ 
+Tomorrow.
+ 
+I have update the github folder with a java backend project with all the files we need and zero code. Tomorrow we will fill it in and chug along.
+ 
+Second, the Angular App has suffered the same fate and has been gutted. We will fill it up tomorrow also. I suggest you play and mess with it. Get comfortable with being to open, close and start up the applications. If you have issues, the internet is filled with answers, looking for question like yours. If for some reason, you have found the threshold of the internets wisdom, I will do my best to answer your question through the facebook page. Better yet please ask tomorrow.
+ 
+PS: PLEASE, PLEASE, PLEASE. DON’T WAIT TILL THE END TO LET ME KNOW YOU ARE NOT COMFORTABLE OR FAMILIAR WITH THE CONCEPTS. I PROMISE YOU I DON’T CHARGE FOR QUESTIONS, EXCEPT ON WEEKENDS.
