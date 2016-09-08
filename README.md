@@ -2,7 +2,8 @@
 
 ## Updates
 
-### [Please take this poll!](pollev.com/isaacgriswol204)
+### [Please take this poll!](
+https://PollEv.com/surveys/htzy65nRd)
 
 
 ### 9/7/2016
